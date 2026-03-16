@@ -1,0 +1,35 @@
+{
+  "accounts": [
+    {
+      "name": "personal",
+      "credentials_file": "credentials/personal_credentials.json",
+      "role": "primary"
+    },
+    {
+      "name": "work",
+      "credentials_file": "credentials/work_credentials.json",
+      "role": "secondary"
+    },
+    {
+      "name": "old-account",
+      "credentials_file": "credentials/old_credentials.json",
+      "role": "source"
+    },
+    {
+      "name": "backup-account",
+      "credentials_file": "credentials/backup_credentials.json",
+      "role": "source"
+    }
+  ],
+  "scan_options": {
+    "include_trashed": false,
+    "mime_types": [],
+    "skip_google_docs": true,
+    "large_file_threshold_mb": 100
+  },
+  "dedup_options": {
+    "hash_algorithm": "md5",
+    "use_drive_md5": true,
+    "fallback_to_name_size": true
+  }
+}
